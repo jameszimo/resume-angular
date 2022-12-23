@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
     - name: Checkout 
       uses: actions/checkout@v3
       
@@ -22,8 +23,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         cache: 'npm'
-    - run: |
-        pwd
-        ls -alt
+    
+    - name: Npm Test
+      run: |
         npm install
-        npm test-cloud
+        npm run test-cloud
