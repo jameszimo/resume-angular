@@ -33,7 +33,7 @@ describe('ViewportService', () => {
     expect(service).toBeTruthy();
   });
 
-  xit('getViewportClass()', () => {
+  it('getViewportClass()', () => {
     service.getViewportClass().subscribe(result => {
       expect(result).toEqual(BreakpointNames.XSmall);
     });
