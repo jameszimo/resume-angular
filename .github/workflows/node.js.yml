@@ -24,6 +24,6 @@ jobs:
         cache: 'npm'
     - run: |
         pwd
-        ll
+        ls -alt
         npm install
         npm test-cloud
