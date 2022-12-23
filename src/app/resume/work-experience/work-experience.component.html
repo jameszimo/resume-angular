@@ -1,0 +1,19 @@
+<div [ngClass]="viewportSizeClass" class="section-container" id="work-experience-container">
+  <mat-icon [ngClass]="viewportSizeClass" class="section-icon" id="work-experience-icon" aria-hidden="false" aria-label="Work Experience Icon">location_city</mat-icon>
+  <div class="section-details">
+    <div id="work-experience-title" class="section-title">{{ workExperienceTitle.toUpperCase() }}</div>
+    <ng-container *ngFor="let experience of getWorkExperience(); let i = index;">
+      <experience
+        [index]="i"
+        [company]="experience.company"
+        [city]="experience.city"
+        [dateRange]="experience.dateRange"
+        [title]="experience.title"
+        [description]="experience.description"
+        [companyLink]="experience.companyLink"
+      >
+      </experience>
+    </ng-container>
+  </div>
+</div>
+

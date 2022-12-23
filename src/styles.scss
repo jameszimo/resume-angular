@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: black;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: darkslateblue;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.section-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+
+  &.XSmall {
+    margin-left: 15px;
+  }
+}
+
+.section-icon {
+  width: 48px;
+  font-size: 48px;
+  margin-right: 50px;
+
+  &.XSmall {
+    display: none;
+  }
+}
+
+.mat-icon {
+  overflow: visible !important;
+}
+
+$steel: #263746;
+$border-color: #FFFFFF;
+$row-spacing: 2px;

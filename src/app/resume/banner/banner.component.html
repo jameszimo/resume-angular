@@ -1,0 +1,27 @@
+<div class="banner-container">
+  <div *ngIf="isDisplayed()" class="banner-portrait-container">
+    <img alt="portrait" class="banner-portrait" src="../../../assets/images/james.jpg"/>
+  </div>
+  <div [ngClass]="viewportSizeClass" class="banner-person-details">
+    <div class="banner-name" id="resume-name">{{ firstName + " " + lastName}}</div>
+    <div class="banner-job-title">{{ jobTitle }}</div>
+    <div class="banner-contact">
+      <div class="banner-contact-location">
+        <mat-icon class="banner-contact-location-icon">location_on</mat-icon>
+        <div class="banner-contact-location-text" id="resume-city">{{ city }}</div>
+      </div>
+      <div class="banner-contact-phone">
+        <mat-icon class="banner-contact-phone-icon">phone</mat-icon>
+        <div class="banner-contact-phone-text" id="resume-phone">
+          <a href="tel:{{ phone }}">{{ phone }}</a>
+        </div>
+      </div>
+      <div class="banner-contact-email">
+        <mat-icon class="banner-contact-email-icon">email</mat-icon>
+        <div class="banner-contact-email-text" id="resume-email">
+          <a href="mailto:{{ email }}">{{ email }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.experience-container {
+  margin-bottom: 4px;
+}
+
+.experience-container-top-margin {
+  margin-top: 14px;
+}
+
+.experience-description-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-description {
+  padding-top: 2px;
+  margin-left: 20px;
+}
+
+.experience-company {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-company-name {
+  font-size: medium;
+}
+
+.experience-company-city {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: medium;
+}
+
+.experience-company-date-range {
+  font-size: medium;
+}
+
+.experience-title {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.experience-bullet-point {
+  font-size: large;
+}

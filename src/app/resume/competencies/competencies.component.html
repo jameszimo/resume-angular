@@ -1,0 +1,22 @@
+<div [ngClass]="viewportSizeClass" class="section-container" id="competencies-container">
+  <mat-icon [ngClass]="viewportSizeClass" id="competencies-icon" class="section-icon" aria-hidden="false" aria-label="Computer Icon">keyboard</mat-icon>
+  <div class="section-details">
+    <div id="competencies-title" class="section-title">{{ competenciesTitle.toUpperCase() }}</div>
+    <div class="competencies-wrapper">
+      <ng-container *ngFor="let competency of getScrambledCompetencies()">
+        <a class="competencies-competency" href="{{ competency.link }}" target="_blank">
+          <div class="competency-parent" *ngIf="competency.imageName; else noImage">
+            <img alt="" class="competencies-competency-image"
+                 src="assets/images/{{ competency.imageName }}"/>
+            <div class="competencies-competency-name">{{ competency.name }}</div>
+          </div>
+          <ng-template #noImage>
+            <div class="competency-parent">
+              <div class="competencies-competency-name-solo-child">{{ competency.name }}</div>
+            </div>
+          </ng-template>
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</div>

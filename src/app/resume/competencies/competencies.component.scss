@@ -1,0 +1,44 @@
+@import 'src/styles';
+
+.competencies-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.competencies-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a.competencies-competency {
+  border-radius: 8px;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 4px;
+  flex-grow: 1;
+}
+
+.competency-parent {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.competencies-competency-name {
+  margin-left: 1px;
+  margin-right: auto;
+}
+
+.competencies-competency-name-solo-child {
+  margin: auto;
+}
+
+.competencies-competency-image {
+  margin-left: auto;
+  margin-right: 1px;
+  height: 15px;
+}
+
+

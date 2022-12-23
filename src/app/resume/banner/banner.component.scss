@@ -1,0 +1,77 @@
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.banner-job-title {
+  margin-top: 7px;
+  font-size: x-large;
+}
+
+.banner-person-details {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+
+  &.XSmall {
+    margin-left: 15px;
+  }
+}
+
+.banner-portrait {
+  border-radius: 100px;
+  height: 125px;
+  width: 125px;
+}
+.banner-portrait-container {
+  border: #eeeeee 2px solid;
+  border-radius: 100px;
+  height: 130px;
+  width: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.XSmall {
+    display: none;
+  }
+}
+
+.banner-contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.banner-name {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.banner-contact-location-icon,
+.banner-contact-phone-icon,
+.banner-contact-email-icon {
+  font-size: 18px;
+  width: 18px;
+}
+
+.banner-contact-location,
+.banner-contact-phone,
+.banner-contact-email {
+  display: flex;
+  margin-right: 10px;
+}
+
+.banner-contact-location-text,
+.banner-contact-phone-text,
+.banner-contact-email-text {
+  padding-right: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+}

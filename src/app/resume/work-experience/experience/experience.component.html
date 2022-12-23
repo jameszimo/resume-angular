@@ -1,0 +1,18 @@
+<div class="experience-container" [ngClass]="{'experience-container-top-margin': index != 0}">
+  <div class="experience-title">{{ title }}</div>
+  <div class="experience-company">
+    <a class="experience-company-name" href="{{ companyLink }}" target="_blank">
+      <div>{{ company }}</div>
+    </a>
+    <div class="experience-company-city">{{ city }}</div>
+    <div class="experience-company-date-range">{{ dateRange }}</div>
+  </div>
+  <div class="experience-description">
+    <ng-container *ngFor="let line of getJobDescription()">
+      <div class="experience-description-container">
+        <div class="experience-bullet-point">•</div>
+        <div class="experience-description">{{ line }}</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

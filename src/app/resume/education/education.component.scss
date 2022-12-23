@@ -1,0 +1,24 @@
+@import 'src/styles';
+
+.education-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-row {
+  padding-top: $row-spacing;
+  padding-bottom: $row-spacing;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.education-row-bullet-point {
+  font-size: large;
+}
+
+.education-content-degree {
+  margin-left: 20px;
+  padding-right: 5px;
+}
+

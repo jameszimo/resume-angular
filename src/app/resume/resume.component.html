@@ -1,0 +1,18 @@
+<div [ngClass]="viewportSizeClass" class="resume-container">
+  <ng-container *ngIf="person">
+    <banner id="banner"
+            [firstName]="person.firstName"
+            [lastName]="person.lastName"
+            [city]="person.city"
+            [phone]="person.phone"
+            [email]="person.email"
+            [jobTitle]="person.jobTitle">
+    </banner>
+    <profile id="profile" [profileContent]="person.profile"></profile>
+    <competencies id="competencies" [competencies]="person.competencies"></competencies>
+    <work-experience id="work-experience" [allWorkExperience]="person.workExperience"></work-experience>
+    <education id="education" [educations]="person.educations"></education>
+    <source-control></source-control>
+    <div><span class="end">.</span></div>
+  </ng-container>
+</div>
