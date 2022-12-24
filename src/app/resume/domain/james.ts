@@ -14,7 +14,23 @@ export const JAMES: Person = {
     {
       company: "The Boeing Company",
       city: "Seattle, WA",
-      dateRange: "2017 - 2017",
+      dateRange: "2020 – present",
+      title: "Senior Software Developer - Full Stack - Product Systems - Various Applications",
+      description: "Developed a GitLab continuous integration and delivery (CICD) pipeline for the new Pivotal Cloud Foundry (PCF) based web application Maintenance Optimization System (MOS) including quality stages with SonarQube and Coverity|Developed the initial Java, Spring and Angular 10 based software for MOS using test driven development (TDD) and kept test coverage at 100% for backend microservices and frontend JavaScript code|Developed Authorization model and implemented SSO Authentication|Created a build monitor that showed real-time visibility for all 4 CICD pipelines and server health for deployed PCF environments|Paired with other developers to teach TDD and paired programming techniques",
+      companyLink: "https://boeing.com"
+    },
+    {
+      company: "The Boeing Company",
+      city: "Seattle, WA",
+      dateRange: "2018 – 2020",
+      title: "Senior Software Developer - Full Stack - Digital Transformation Environment (DTE)",
+      description: "Empower client development teams in modern software development practices by working with them side by side while developing software solutions for Cloud Foundry based web applications at multiple Boeing sites and at Pivotal Labs in Seattle|Practice pair programming, test driven development (TDD) and other eXtreme programming techniques on small balanced teams in order to accomplish iterative development and continuous delivery (CI/CD) of features and stories for end users while enabling client development teams|Lead a team as the 'Anchor' developer on an engagement with an HR IT team on a large project to replace an outgoing HR system, which involved interfacing with management and working with other senior developers in order to make technical architecture decisions and to provide leadership for the team",
+      companyLink: "https://boeing.com"
+    },
+    {
+      company: "The Boeing Company",
+      city: "Seattle, WA",
+      dateRange: "2017 - 2018",
       title: "Software Developer - Full Stack - Toolbox Project",
       description: "Developed software solutions for an Azure cloud based web application utilizing a microservices architecture|Practiced pair programming and test driven development (TDD) in an agile development setting to accomplish iterative and continuous delivery (CI/CD) of features and stories for end users|Worked with product owners, functional analysts, offshore and other on premise development teams, architects, and end users in order to coordinate development on various libraries and services for a complex cloud based web application",
       companyLink: "https://boeing.com"
@@ -25,14 +41,6 @@ export const JAMES: Person = {
       dateRange: "2004 – 2015",
       title: "Software Developer - Oracle Siebel CRM/Oracle Business Intelligence (OBIEE)",
       description: "Developed ETL, interactive dashboards, reports, and analysis templates using Oracle Business Intelligence Enterprise Edition (OBIEE)|Analyzed, designed, coded, and implemented complex solutions for an integrated Siebel CRM client/server information system|Developed and maintained a J2EE (Java) web service interface to Oracle Siebel CRM that allows an always available system even during Siebel outages|Worked with functional analysts, architects, offshore development and other IT groups in order to design changes to software applications and to minimize risk during the development lifecycle|Lead On-shore and off-shore resources in projects to develop technical solutions to highly complex business requirements|Automated common software development processes (repository export, compile, tests, server builds) in order to decrease errors and decrease software move time which saved countless rework hours and money. |Lead configuration management activity to implement ClearCase, then Subversion as source control and to automate code move activities in an effort to reduce errors and save time and money|Provided third level production support for an integrated Oracle Siebel CRM implementation",
-      companyLink: "https://boeing.com"
-    },
-    {
-      company: "The Boeing Company",
-      city: "Seattle, WA",
-      dateRange: "2018 – Present",
-      title: "Senior Software Developer - Full Stack - Digital Transformation Environment (DTE)",
-      description: "Empower client development teams in modern software development practices by working with them side by side while developing software solutions for Cloud Foundry based web applications at multiple Boeing sites and at Pivotal Labs in Seattle|Practice pair programming, test driven development (TDD) and other eXtreme programming techniques on small balanced teams in order to accomplish iterative development and continuous delivery (CI/CD) of features and stories for end users while enabling client development teams|Lead a team as the 'Anchor' developer on an engagement with an HR IT team on a large project to replace an outgoing HR system, which involved interfacing with management and working with other senior developers in order to make technical architecture decisions and to provide leadership for the team",
       companyLink: "https://boeing.com"
     },
     {
@@ -127,7 +135,7 @@ export const JAMES: Person = {
       id: 11,
       name: "Test Driven Development (TDD)",
       link: "https://en.wikipedia.org/wiki/Test-driven_development",
-      imageName: ""
+      imageName: "tdd.jpeg"
     },
     {
       id: 12,
