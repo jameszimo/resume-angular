@@ -3,16 +3,15 @@ const path = require('path');
 
 const app = express();
 
-app.get('*',function(req,res,next){
-  if(req.headers['x-forwarded-proto']!='https' && process.env.NODE_ENV === 'production') {
-    res.redirect('https://james.zimowsky.net');
-  } else {
-    next();
+app.use(function (request, response, next) {
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+    return response.redirect("https://" + request.headers.host + request.url);
   }
-});
+  next();
+})
 
 app.use(express.static(__dirname + '/dist'));
-app.get('/*', function(req, res) {
+app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
