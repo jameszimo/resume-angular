@@ -128,7 +128,7 @@ export const JAMES: Person = {
     {
       id: 10,
       name: "Pivotal Cloud Foundry (PCF)",
-      link: "https://run.pivotal.io/",
+      link: "https://tanzu.vmware.com/tanzu/",
       imageName: "pcf.png"
     },
     {
